@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="letter-c.png" type="image/x-icon">
+    <title>Shop - Cybexhark</title>
+    <link rel="stylesheet" href="styleshop.css">
+    <link rel="stylesheet" href="cybex-theme.css">
+</head>
+<body>
+
+    <div class="main">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="menu">
+                <h2 class="logo">Cybexhark.</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="shop-intro">
+                <p class="shop-eyebrow">BUILT FOR YOUR NEXT REP</p>
+                <h1>Gear up. Get stronger.</h1>
+                <p>Training essentials and performance favorites, selected for your goals.</p>
+            </section>
+
+            <section class="shop-categories" aria-label="Product categories">
+                <div class="category-heading">
+                    <h2>Shop by category</h2>
+                    <p id="category-result-count" aria-live="polite">Showing all 8 products</p>
+                </div>
+                <div class="category-filters" role="group" aria-label="Filter products">
+                    <button class="category-filter is-active" type="button" data-category="all" aria-pressed="true">All products</button>
+                    <button class="category-filter" type="button" data-category="supplements" aria-pressed="false">Supplements</button>
+                    <button class="category-filter" type="button" data-category="equipment" aria-pressed="false">Gym equipment</button>
+                </div>
+            </section>
+
+            <div class="listProduct">
+                <div class="product-card" data-category="equipment">
+                    <img src="straps.jpg" alt="Lifting wrist straps" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Lifting Wrist Straps</h3>
+                        <p class="product-promo">-20% OFF SALE</p>
+                        <del>$25.00</del>
+                        <p class="current-price">$20.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="equipment">
+                    <img src="belt.jpg" alt="Jet black lever belt" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Jet Black Lever Belt</h3>
+                        <p class="product-promo">With Free 1 Bag</p>
+                        <p class="current-price">$50.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="equipment">
+                    <img src="Splay Nylon Speed Rope 10 Foot - Purple _ 10 Foot.jpg" alt="Purple nylon speed rope" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Splay Nylon Speed Rope</h3>
+                        <p class="product-promo">With FREEBIES</p>
+                        <p class="current-price">$12.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplements">
+                    <img src="Whey Protein.jpg" alt="Whey protein powder" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Whey Protein Powder</h3>
+                        <p class="product-promo">-25% OFF SALE</p>
+                        <del>$65.99</del>
+                        <p class="current-price">$55.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="supplements">
+                    <img src="euphoria.jpg" alt="Euphoria pre-workout" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Euphoria Pre-Workout</h3>
+                        <p class="product-promo">FREE SHAKER</p>
+                        <p class="current-price">$59.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="supplements">
+                    <img src="creatine.jpg" alt="Creatine monohydrate" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Creatine Monohydrate</h3>
+                        <p class="product-promo">FREE SHAKER / -15% OFF SALE</p>
+                        <del>$72.99</del>
+                        <p class="current-price">$69.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="equipment">
+                    <img src="dumbell.jpeg" alt="10 kilogram dumbbell" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Dumbbells (10KG)</h3>
+                        <p class="product-promo">Buy 1 Take 1</p>
+                        <p class="current-price">$20.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="equipment">
+                    <img src="david.jpg" alt="Compression T-shirt" loading="lazy" decoding="async">
+                    <div class="product-info">
+                        <h3>Compression T-shirt</h3>
+                        <p class="product-promo">Buy 1 Take 2 ()</p>
+                        <p class="current-price">$25.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- More products as needed -->
+            </div>
+
+        </div>
+    </div>
+    <button id="view-cart" type="button" aria-label="Open your shopping cart">
+        <img src="shopping-cart.png" alt="" width="30" height="30" decoding="async">
+        <span id="cart-count" class="cart-badge" aria-live="polite">0</span>
+    </button>
+    <footer class="shop-footer">&copy; Copyright - Cybexhark 2025</footer>
+    <script src="shop.js" defer></script>
+    <script src="cybex-motion.js" defer></script>
+</body>
+</html>

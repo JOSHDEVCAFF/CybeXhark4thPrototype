@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse project activities and exercises.">
+    <link rel="icon" href="letter-c.png" type="image/png">
+    <title>Project Portfolio | Cybexhark</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <header class="portfolio-header">
+        <a class="portfolio-brand" href="dashboard.html">CYBE<span>X</span>HARK</a>
+        <a class="back-link" href="dashboard.html">&larr; Customer dashboard</a>
+    </header>
+    <main class="portfolio-main">
+        <header class="portfolio-intro">
+            <p class="eyebrow">PROJECT SHOWCASE</p>
+            <h1>Activities <span>&amp;</span> Exercises</h1>
+            <p>Browse the project previews and open a Google Drive link to view the code.</p>
+        </header>
+
+        <section class="portfolio-section" aria-labelledby="activities-heading">
+            <div class="section-heading">
+                <div><p class="eyebrow">01 / COLLECTION</p><h2 id="activities-heading">Activities</h2></div>
+                <p>Class activities and project work</p>
+            </div>
+            <div class="project-grid" id="activitiesGrid"></div>
+            <p class="empty-message" id="activitiesEmpty" hidden>No activities have been added yet.</p>
+            <nav class="pagination" aria-label="Activities pages">
+                <button type="button" data-collection="activities" data-direction="-1">Previous</button>
+                <span id="activitiesPage" aria-live="polite"></span>
+                <button type="button" data-collection="activities" data-direction="1">Next</button>
+            </nav>
+        </section>
+
+        <section class="portfolio-section" aria-labelledby="exercises-heading">
+            <div class="section-heading">
+                <div><p class="eyebrow">02 / COLLECTION</p><h2 id="exercises-heading">Exercises</h2></div>
+                <p>Practice tasks and exercises</p>
+            </div>
+            <div class="project-grid" id="exercisesGrid">
+                <article class="project-card">
+                    <p class="eyebrow">EXERCISE</p>
+                    <h3>Personal Profile Page</h3>
+                    <p>Create a simple HTML page introducing yourself, with a heading, a short bio, and a list of interests.</p>
+                </article>
+            </div>
+            <p class="empty-message" id="exercisesEmpty" hidden>Add exercise projects in <code>portfolio.js</code>.</p>
+            <nav class="pagination" aria-label="Exercises pages">
+                <button type="button" data-collection="exercises" data-direction="-1" disabled>Previous</button>
+                <span id="exercisesPage" aria-live="polite">1 project</span>
+                <button type="button" data-collection="exercises" data-direction="1" disabled>Next</button>
+            </nav>
+            
+        </section>
+    </main>
+    <footer>&copy; 2026 Cybexhark. Project portfolio.</footer>
+</body>
+</html>

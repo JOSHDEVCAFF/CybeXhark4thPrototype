@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="letter-c.png" type="image/png">
+    <title>User Dashboard - Cybexhark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="cybex-theme.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a class="dashboard-brand" href="index.html" aria-label="Cybexhark home">
+            <span class="dashboard-brand-mark" aria-hidden="true"><i class="fa-solid fa-dumbbell"></i></span>
+            <span class="dashboard-brand-wordmark"><span class="dashboard-brand-name">CYBE<span>X</span>HARK</span><small>TRAIN WITH PURPOSE</small></span>
+        </a>
+        <h2 class="sidebar-section-title">For Shop</h2>
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+            <li><i class="fas fa-shopping-bag"></i> Orders</li>
+            <li><i class="fas fa-users"></i> Products</li>
+            <li><i class="fas fa-file-alt"></i> Marketing</li>
+            <li><i class="fas fa-file-alt"></i> Rate</li>
+            <li><i class="fas fa-file-alt"></i> Reports</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1 style="color:#fff9f9">Good Morning, Welcome, Rexile</h1>
+        <p style="color:white">April 11,2025</p>
+        <div class="dashboard-header">
+            <div class="card" style="background: linear-gradient(135deg, #ff0000, #d40000); color: white; box-shadow: 0 4px 15px rgba(212, 0, 0, 0.7);">
+                <h3> Orders</h3>
+                <p>4565</p>
+                <p id="card-date">July 29, 2025</p>
+            </div>
+            <div class="card" style="background: linear-gradient(135deg, #c80000, #ad1919); color: white; box-shadow: 0 4px 15px rgba(223, 16, 16, 0.7);">
+                <h3>Profit</h3>
+                <p>$8541</p>
+                <p id="card-date">August 9, 2025</p>
+            </div>
+            <div class="card" style="background: linear-gradient(135deg, #a50505, #770202); color: white; box-shadow: 0 4px 15px rgba(83, 3, 3, 0.7);">
+                <h3>New Products</h3>
+                <p>320</p>
+                <p id="card-date">September 11, 2025</p> <!-- Corrected date -->
+            </div>
+            <div class="card" style="background: linear-gradient(135deg, #990e0e, #351212); color: white; box-shadow: 0 4px 15px rgba(90, 2, 2, 0.7);">
+                <h3>Active Customer</h3>
+                <p>100</p>
+                <p id="card-date">October 28, 2025</p>
+            </div>
+        </div>
+
+        <div class="orders-table">
+            <h3>Recent Orders</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Product ID</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Order Time (date&time)</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                </tr>
+                <tr class="delivered">
+                    <td>1</td>
+                    <td><img src="euphoria.jpg" width="50" style="border-radius: 20px;" loading="lazy" decoding="async"></td>
+                    <td>Euphoria Pre-workout</td>
+                    <td>id000911</td>
+                    <td>27</td>
+                    <td>$59.99</td>
+                    <td>25-08-2025 / 02:12:56</td>
+                    <td>Horacist Angana</td>
+                    <td>Delivered</td>
+                </tr>
+                <tr class="delivered">
+                    <td>2</td>
+                    <td><img src="Whey Protein.jpg" width="50" style="border-radius: 20px;" loading="lazy" decoding="async"></td>
+                    <td>Whey Protein</td>
+                    <td>id0000002</td>
+                    <td>12</td>
+                    <td>$55.00</td>
+                    <td>25-08-2025 / 21:12:56</td>
+                    <td>Arvin Guinoo</td>
+                    <td>Delivered</td>
+                </tr>  
+                <tr class="in-transit">
+                    <td>3</td>
+                    <td><img src="belt.jpg" width="50" style="border-radius: 20px;" loading="lazy" decoding="async"></td>
+                    <td>Jet Black Lever Belt</td>
+                    <td>id777</td>
+                    <td>2</td>
+                    <td>$50.99</td>
+                    <td>23-04-2025 / 03:02:10</td>
+                    <td>Josh Mendoza</td>
+                    <td>In Transit</td>
+                </tr> 
+                <tr class="in-transit">
+                    <td>4</td>
+                    <td><img src="creatine.jpg" width="50" style="border-radius: 20px;" loading="lazy" decoding="async"></td>
+                    <td>Creatine Monohydrate</td>
+                    <td>id0000001</td>
+                    <td>20</td>
+                    <td>$69.99</td>
+                    <td>27-08-2025 / 01:22:12</td>
+                    <td>Telacas Cirilo</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr class="shipped">
+                    <td>5</td>
+                    <td><img src="david.jpg " width="50" style="border-radius: 20px;" loading="lazy" decoding="async"></td>
+                    <td>Compression T-shirt</td>
+                    <td>id0000020</td>
+                    <td>100</td>
+                    <td>$25.99</td>
+                    <td>25-08-2025 / 02:12:56</td>
+                    <td>Josh Mendoza</td>
+                    <td>Shipped</td>
+                </tr>
+            </table>
+        
+        </div>
+        <div class="form-container">
+            <div class="order-overview">
+                <h3>Order Overview</h3>
+                <p>Total Revenue: 5680</p>
+                <p>Online Orders: 50% <progress value="50" max="100"></progress></p>
+                <p>Offline Orders: 30% <progress value="30" max="100"></progress></p>
+                <p>Cash on Delivery: 20% <progress value="20" max="100"></progress></p>
+            </div>
+        </div>
+         
+        </div>
+    </div>
+    <div class="settings-modal" id="settingsModal">
+        <div class="settings-container">
+            <h3>Settings</h3>
+            <div class="settings-section">
+                <h4>Theme</h4>
+                <select id="themeSelector">
+                    <option value="default">Default</option>
+                    <option value="light">Light</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div class="settings-section">
+                <h4>Notifications</h4>
+                <label>
+                    <input type="checkbox" id="emailNotifications">
+                    Email Notifications
+                </label>
+                <label>
+                    <input type="checkbox" id="smsNotifications">
+                    SMS Notifications
+                </label>
+                <label>
+                    <input type="checkbox" id="newproductNotifications">
+                    New product Notifications
+                </label>
+            </div>
+            <button id="saveSettingsBtn">Save Changes</button>
+        </div>
+    </div>
+    <div class="account-settings-section" id="accountSettingsSection" style="display: none;">
+    
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <h3>Profile Information</h3>
+            <div style="display: flex; align-items: center; margin-top: 10px;">
+                <img src="laid.jpg" alt="Profile Image" class="profile-image" style="border-radius: 50%; width: 140px; height: 140px; margin-right: 15px;" decoding="async">
+                <div>
+                    <p style="font-weight: bold; font-family: 'Helvetica Neue', Arial, sans-serif; color: #e6e6e6; font-size: 14px; margin: 5px 0; text-shadow: 0px 0px 8px rgba(133, 0, 0, 0.281);">Owner</p>
+                    <h3 style="font-weight: bold; font-family: Arial, sans-serif; color: #202020; font-size: 18px; margin: 0;">Josh Mendoza</h3>
+                    <p style="font-weight: normal; font-family: Arial, sans-serif; color: #3f3f3f; font-size: 14px; margin: 5px 0;">@joshcaffeinated</p>
+                </div>
+            </div>
+            <p style="color: rgb(0, 0, 0); font-weight: bold; text-align: left; padding-left: 10px"><b style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Cybexhark Owner & CEO</b><br>Social Accounts</p>
+                <p style="text-align: left; padding-left: 10px;">
+                <img src="facebook.png" width="15px" height="15px" decoding="async"> Josh Mendoza<br>
+                <img src="social.png" width="15px" height="15px" decoding="async"> Joshcaffeinated<br>
+                <img src="gmail.png" width="15px" height="15px" decoding="async"> Joshscz123@gmail.com<br>
+                <img src="twitter.png" width="15" height="15px" decoding="async"> Joshcaffeinated</p>
+
+            <hr style="border: 1px solid #838383; margin-top: 15px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);">
+            <div class="profile-item">
+                <label for="profileName" style="color:rgb(0, 0, 0); font-family: system-ui; font-weight:bold;">Name:</label>
+                <input type="text" id="profileName" value="Josh Mendoza" readonly>
+            </div>
+            <div class="profile-item">
+                <label for="profileBirthday" style="color: rgb(0, 0, 0); font-family: system-ui; font-weight:bold;">Birthday:</label>
+                <input type="date" id="profileBirthday" value="2001-11-09" readonly>
+            </div>
+            <div class="profile-item">
+                <label for="profileLocation" style="color: rgb(0, 0, 0); font-family: system-ui; font-weight:bold;">Location:</label>
+                <input type="text" id="profileLocation" value="New York, USA" readonly>
+            </div>
+<button id="changeInfoBtn" style="margin-top: 20px;">Change Information</button>
+        </div>
+    
+        <!-- Change Username -->
+        <div class="account-section">
+            <h3>Account Settings</h3>
+        <div class="account-settings-item">
+            <label for="currentUsername" style="color:rgb(0, 0, 0); font-family: system-ui; font-weight:bold;">Current Username:</label>
+            <input type="text" id="currentUsername" value="JoshCaffeinated" readonly>
+            <button id="changeUsernameBtn">Change Username</button>
+        </div>
+    
+        <!-- Change Email -->
+        <div class="account-settings-item">
+            <label for="currentEmail" style="color:rgb(0, 0, 0); font-family: system-ui; font-weight:bold;">Current Email:</label>
+            <input type="email" id="currentEmail" value="current_email@example.com" readonly>
+            <button id="changeEmailBtn">Change Email</button>
+        </div>
+    
+        <!-- Change Password -->
+        <div class="account-settings-item" >
+            <label for="currentPassword"  style="color:rgb(0, 0, 0); font-family: system-ui; font-weight:bold;">Current Password:</label>
+            <input type="password" id="currentPassword" value="********" readonly>
+            <button id="accountChangePasswordBtn">Change Password</button> <!-- Updated id -->
+            <button id="forgotPasswordBtn" >Forgot Password?</button> <!-- New button -->
+            <hr style="border: 1px solid #838383; margin-top: 15px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);">
+        </div>
+    </div>
+    </div>
+    
+    <!-- Modals for Changing Information -->
+    <div class="modal" id="changeModal" style="display: none;">
+        <div class="modal-content">
+            <h3 id="modalTitle">Change Information</h3>
+            <div id="currentPasswordContainer" style="display: none;"> <!-- New container for current password -->
+                <label for="currentPasswordInput" style="float: left; font-weight: bold;">Current Password:</label>
+                <input type="password" id="currentPasswordInput" placeholder="Enter current password" style="text-align: left;">
+                <label for="currentPasswordInput" style="float: left; font-weight: bold;">New Password:</label>
+            </div>
+            <input type="text" id="modalInput" placeholder="Enter new value" style="text-align: left;">
+            <button id="saveModalBtn">Save</button>
+            <button id="closeModalBtn">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotPasswordModal" style="display: none;">
+        <div class="modal-content">
+            <h3>Forgot Password</h3>
+            <div>
+                <label for="forgotUsername" style="float: left; font-weight: bold;">Enter Username:</label>
+                <input type="text" id="forgotUsername" placeholder="Enter your username" style="text-align: left;">
+            </div>
+            <div id="newPasswordContainer" style="display: none;">
+                <label for="newPassword" style="float: left;" font-weight: bold;>New Password:</label>
+                <input type="password" id="newPassword" placeholder="Enter new password" style="text-align: left;">
+                <button id="toggleNewPassword" type="button">Show</button>
+            </div>
+            <button id="resetPasswordBtn">Reset Password</button>
+            <button id="closeForgotPasswordModal">Cancel</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Copyright - Cybexhark</p>
+    </div>
+    <script>
+    const settingsLink = document.getElementById('settingsLink');
+    const settingsModal = document.getElementById('settingsModal');
+    const saveSettingsBtn = document.getElementById('saveSettingsBtn');
+
+    // Ensure the modal is hidden on page load
+    window.addEventListener('load', function () {
+        settingsModal.style.display = 'none';
+    });
+
+    // Open the settings modal
+    if (settingsLink) {
+        settingsLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            settingsModal.style.display = 'flex'; // Show the settings modal
+        });
+    }
+
+    // Close the modal when clicking outside of it
+    window.addEventListener('click', function (event) {
+        if (event.target === settingsModal) {
+            settingsModal.style.display = 'none'; // Hide the settings modal
+        }
+    });
+
+    // Save settings and close the modal
+    saveSettingsBtn.addEventListener('click', function () {
+        alert('Settings saved successfully!');
+        settingsModal.style.display = 'none'; // Hide the modal after saving
+    });
+
+    const accountSettingsLink = document.getElementById('accountSettingsLink');
+    const accountSettingsSection = document.getElementById('accountSettingsSection');
+    const mainContent = document.querySelector('.main-content');
+    const changeModal = document.getElementById('changeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalInput = document.getElementById('modalInput');
+    const saveModalBtn = document.getElementById('saveModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    let currentField = null;
+
+    // Show Account Settings Section
+    if (accountSettingsLink) {
+        accountSettingsLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            mainContent.style.display = 'none'; // Hide the main content
+            accountSettingsSection.style.display = 'block'; // Show the account settings section
+        });
+    }
+
+    // Open Modal for Changing Information
+    function openModal(field, title, isPassword = false) {
+        currentField = field;
+        modalTitle.textContent = title;
+
+        const currentPasswordContainer = document.getElementById('currentPasswordContainer');
+        if (isPassword) {
+            currentPasswordContainer.style.display = 'block';
+            modalInput.type = 'password';
+            modalInput.placeholder = 'Enter new password';
+        } else {
+            currentPasswordContainer.style.display = 'none';
+            modalInput.type = 'text';
+            modalInput.placeholder = `Enter ${title.toLowerCase()}`;
+        }
+        modalInput.value = ''; // Clear input
+        changeModal.style.display = 'flex'; // Show the modal
+    }
+
+    // Save Changes from Modal
+    saveModalBtn.addEventListener('click', function () {
+        if (currentField) {
+            const newValue = modalInput.value.trim();
+            if (newValue === '') {
+                alert('Please enter a valid value.');
+                return;
+            }
+
+            if (currentField === 'currentPassword') {
+                const currentPasswordInput = document.getElementById('currentPasswordInput').value.trim();
+                if (currentPasswordInput === '') {
+                    alert('Please enter your current password.');
+                    return;
+                }
+                if (currentPasswordInput !== '********') { // Replace with actual password validation logic
+                    alert('Current password is incorrect.');
+                    return;
+                }
+                document.getElementById('currentPassword').value = '********'; // Mask the new password
+                alert('Password updated successfully!');
+            } else {
+                document.getElementById(currentField).value = newValue;
+                alert(`${modalTitle.textContent} updated successfully!`);
+            }
+        }
+        changeModal.style.display = 'none'; // Hide the modal
+    });
+
+    // Close Modal
+    closeModalBtn.addEventListener('click', function () {
+        changeModal.style.display = 'none'; // Hide the modal
+    });
+
+    // Event Listener for "Change Username" Button
+    document.getElementById('changeUsernameBtn').addEventListener('click', function () {
+        openModal('currentUsername', 'New Username');
+    });
+
+    // Event Listener for "Change Email" Button
+    document.getElementById('changeEmailBtn').addEventListener('click', function () {
+        openModal('currentEmail', 'New Email');
+    });
+
+    // Event Listener for "Change Password" Button
+    document.getElementById('accountChangePasswordBtn').addEventListener('click', function () {
+        openModal('currentPassword', 'New Password', true);
+    });
+
+    // Forgot Password Logic
+    resetPasswordBtn.addEventListener('click', function () {
+        const username = forgotUsername.value.trim();
+        const users = JSON.parse(localStorage.getItem('users'));
+
+        const user = users.find(u => u.username === username);
+        if (!user) {
+            alert('Username not found!');
+            return;
+        }
+
+        if (newPasswordContainer.style.display === 'none') {
+            newPasswordContainer.style.display = 'block';
+        } else {
+            const newPasswordValue = newPassword.value.trim();
+            if (newPasswordValue === '') {
+                alert('Please enter a new password.');
+                return;
+            }
+
+            user.password = newPasswordValue;
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Password reset successfully!');
+            forgotPasswordModal.style.display = 'none';
+        }
+    });
+
+    // Toggle Password Visibility
+    toggleNewPassword.addEventListener('click', function () {
+        if (newPassword.type === 'password') {
+            newPassword.type = 'text';
+            toggleNewPassword.textContent = 'Hide';
+        } else {
+            newPassword.type = 'password';
+            toggleNewPassword.textContent = 'Show';
+        }
+    });
+
+    // Open Forgot Password Modal
+    document.getElementById('forgotPasswordBtn').addEventListener('click', function () {
+        forgotPasswordModal.style.display = 'flex';
+        forgotUsername.value = '';
+        newPassword.value = '';
+        newPasswordContainer.style.display = 'none';
+    });
+
+    // Close Forgot Password Modal
+    closeForgotPasswordModal.addEventListener('click', function () {
+        forgotPasswordModal.style.display = 'none';
+    });
+
+    // LocalStorage Initialization
+    if (!localStorage.getItem('users')) {
+        localStorage.setItem('users', JSON.stringify([
+            { username: 'Joshcaffeinated', email: 'current_email@example.com', password: 'password123' }
+        ]));
+    }
+    </script>
+    
+</body>
+</html>
